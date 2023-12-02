@@ -81,4 +81,4 @@ newGameBtn.addEventListener("click", () => {
 function updateScores() {
     document.getElementById('playerScore').innerHTML = `${playerScore}`;
     document.getElementById('cpuScore').innerHTML = `${cpuScore}`;
-}
+}    
