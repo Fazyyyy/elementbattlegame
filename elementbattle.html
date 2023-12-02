@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="elementbattle.css">
 </head>
 <body>
+    <section class="score">
+        <div class="player_score">
+            <span class="player_scores"> 
+                <p>Player Score</p>
+                <p id="playerScore">0</p> 
+                
+            </span>
+            <span class="player_scores"> 
+                <p>CPU Score</p>
+                <p id="cpuScore">0</p> 
+            </span>
+            <span class="player_scores"> 
+                <button id="newGameBtn">New Game</button> 
+            </span>
+        </div>
+    </section>
     <section class="container">
         <div class="option">Choose Your Element</div>
         <div class="option_images">
@@ -27,6 +43,9 @@
           <span class="user_result">
            <img src="pokeball.png" alt="">
           </span>
+          <span class="user_result">
+            <p>VS</p>
+           </span>
           <span class="cpu_result">
             <img src="pokeball.png" alt="">
             
@@ -34,6 +53,7 @@
         </div>
         
     </section>
+    
     <script src="elementbattle.js"></script>
 </body>
 </html>
