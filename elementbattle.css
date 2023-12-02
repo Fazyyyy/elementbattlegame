@@ -1,0 +1,67 @@
+body{
+ background-image: url("background.jpg");
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+}
+.container{
+    background-image: url("gamearena.avif");
+    padding: 4rem 10rem;
+    border-radius: 14px;
+    
+}
+.result_field{
+    display: flex;
+     column-gap: 12rem;
+     
+}
+.result_field img{
+    
+    width: 200px;
+   
+}
+.user_result img{
+    float: left;
+ 
+}
+.option{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(56, 110, 56);
+    margin-bottom: 9rem;
+    
+}
+
+.option_images{
+    display: flex;
+    align-items: center;
+    margin-top: -7rem;
+    justify-content: space-between;
+}
+
+.option_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.option_image:hover{
+    opacity: 1;
+}
+.option_image:active{
+    opacity: 1;
+}
+.option_image img{ 
+    width: 50px;
+    pointer-events: none;
+}
+.option_image p{
+    color: rgb(51, 255, 0);
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    pointer-events: none;
+}
