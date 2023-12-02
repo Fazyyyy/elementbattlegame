@@ -5,11 +5,12 @@ align-items: center;
  
 }
 .score {
-    background-color: lightgreen; 
+    background-color: rgb(5, 15, 5); 
     padding: 10px;
     text-align: center;
     position: relative;
     z-index: 1;
+    border: 2px solid;
     border-radius: 14px;
     
 }
@@ -18,27 +19,36 @@ align-items: center;
     display: inline-block;
     margin-right: 20px; 
 }
+.player_scores p{
+    color: aliceblue;
+}
 #newGameBtn {
-    margin-top: 20px; /* Adjust as needed for spacing */
-    background-color: #4CAF50; /* Set the background color */
-    color: white; /* Set the text color */
-    padding: 10px 20px; /* Set padding for better appearance */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    cursor: pointer; /* Add a pointer cursor on hover */
+    margin-top: 20px; 
+    background-color: #265728; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 #newGameBtn:hover {
     background-color: #45a049; 
 }
 
 .container{
+    
     background-image: url("gamearena.avif");
-    padding: 4rem 10rem;
+    width: 1275px;
+    height: 380px;
+    padding: 45px;
+    border: 2px solid;
     border-radius: 14px;
     
 }
 .result_field{
     display: flex;
+    align-items: center;
+    justify-content: center;
      column-gap: 18rem;
      
 }
@@ -47,8 +57,8 @@ align-items: center;
    
 }
 .result_field p{
-    font-size: 2rem;
-    color: brown;
+    font-size: 5rem;
+    color: rgb(100, 0, 0);
     margin-top: 5rem;
 }
 .user_result img{
@@ -87,6 +97,7 @@ align-items: center;
 .option_image img{ 
     width: 50px;
     pointer-events: none;
+    align-items: center;
 }
 .option_image p{
     color: rgb(51, 255, 0);

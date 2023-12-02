@@ -43,23 +43,23 @@ optionImages.forEach((image, index) => {
             cpuResult.src = cpuChoice;
         }
 
-        // Determine the winner;
+
         if (
             (userChoice.includes("grassenergy.png") && cpuChoice.includes("fireenergy.png")) ||
             (userChoice.includes("fireenergy.png") && cpuChoice.includes("waterenergy.png")) ||
             (userChoice.includes("waterenergy.png") && cpuChoice.includes("grassenergy.png"))
         ) {
-            option.textContent = "CPU wins!";
+            option.textContent = "CPU wins!, Choose an Element For Next Round!";
             cpuScore++;
         } else if (
             (userChoice.includes("fireenergy.png") && cpuChoice.includes("grassenergy.png")) ||
             (userChoice.includes("waterenergy.png") && cpuChoice.includes("fireenergy.png")) ||
             (userChoice.includes("grassenergy.png") && cpuChoice.includes("waterenergy.png"))
         ) {
-            option.textContent = "You win!";
+            option.textContent = "You win!, Choose an Element For Next Round!";
             playerScore++;
         } else {
-            option.textContent = "It's a tie!";
+            option.textContent = "It's a tie!, Choose an Element For Next Round!";
         }
 
 
@@ -73,6 +73,8 @@ newGameBtn.addEventListener("click", () => {
 
     
     updateScores();
+
+    option.textContent = "Choose Your Element"
 
     userResult.src = "pokeball.png";
     cpuResult.src = "pokeball.png";
